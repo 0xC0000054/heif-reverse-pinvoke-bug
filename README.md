@@ -1,4 +1,4 @@
-# heif-reverse-pinvoke
+# heif-reverse-pinvoke-bug
 
 This repository demonstrates a reverse P/Invoke marshaling bug that occurs when calling `heif_context_write` on
 the x86 version of .NET Core 3.1.10.
