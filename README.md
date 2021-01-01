@@ -20,6 +20,7 @@ struct heif_error (* write)(struct heif_context* ctx,
 My managed code represents that callback using the following [delegate](https://github.com/0xC0000054/libheif-sharp/blob/de4545eb7643c3e3f53ee123c96defb74316b961/src/Interop/LibHeif/IO/heif_writer.cs#L28):
 
 ```c#
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 internal delegate heif_error WriteDelegate(IntPtr ctx, IntPtr data, UIntPtr size, IntPtr userData);
 ```
 
